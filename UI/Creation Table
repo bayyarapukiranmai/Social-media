@@ -1,0 +1,36 @@
+use social_media;
+
+create table users(
+    id integer primary key auto_increment,
+	name varchar(60),
+    profile varchar(70),
+    password varchar(60),
+    headline varchar(100),
+    token varchar(600)
+);
+
+create table posts(
+    profile varchar(50),
+    content varchar(6000),
+    likes integer,
+    shares integer
+
+
+
+);
+
+insert into users(name,profile,password,headline,token)
+values('bayyarapu kiranmai','bayyarapu_kiranmai','7075722779','software''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'),('bayyarapu prasanna','bayyarapu_prasanna','9989971729','attender''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c');
+
+
+
+insert into posts (profile,content,likes,shares)
+values('bayyarapu_kiranmai','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus risus in metus venenatis eleifend. Integer aliquet dui sit amet consectetur interdum. Sed eget gravida libero. Suspendisse non ipsum velit. Ut mollis turpis ligula, id posuere nunc egestas id. Quisque ultricies pulvinar mi vel tristique. Vivamus eu magna ligula. Pellentesque dapibus ligula ut mi congue, ac euismod lectus porttitor. Sed eleifend sem massa, vel lacinia sapien placerat ac. Integer venenatis eros et lacinia mattis. Vivamus mollis nunc ligula, eu fermentum orci maximus eleifend. Vestibulum hendrerit consectetur dignissim. Duis interdum aliquam ipsum, at consectetur tellus malesuada quis. Aliquam pulvinar lorem metus, ullamcorper aliquet metus consectetur ut. Donec dapibus iaculis dolor, sit amet suscipit nunc venenatis ut','10','20'),('joy praneeth','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus risus in metus venenatis eleifend. Integer aliquet dui sit amet consectetur interdum','20','15');
+
+
+
+
+
+
+
+
